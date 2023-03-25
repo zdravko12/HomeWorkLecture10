@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWorkLecture17</title>
+  </head>
+  <body>
+
+    <style>
+     
+      #form:hover{
+        border: 2px solid rgb(0, 76, 255);
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 98, 255, 0.84);
+        width: 170px;
+
+      }
+      #form{
+        border: 2px solid rgb(0, 229, 255);
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px;
+        width: 170px;
+        background-image: url("https://images.unsplash.com/photo-1630890102474-f9b4236f26c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1cnJlZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+      }
+      #submit{
+        margin-left: 50px;
+        
+      }
+      #submit:hover{
+        margin-left: 50px;
+        background-color: aquamarine;
+        text-shadow: 1px 10px 10px;
+        
+      }
+    </style> 
+   
+     <form  id="form"onsubmit="return validateForm()"> 
+         <label for="name">Name:</label></br>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z]{9}" title="Name" placeholder="Name"></br>
+        <section id="nameError" class="error"></section>
+
+        <label for="email">Email:</label></br>
+        <input type="email" id="email" name="email" required title="Mail" placeholder="Mail"></br>
+        <section id="emailError" class="error"></section>
+
+        <label for="password">Password:</label></br>
+        <input type="password" id="password" name="password" required minlength="8" title="password" placeholder="Password"></br>
+        <section id="passwordError" class="error"></section>
+
+        <label for="phone">Phone:</label></br>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{9}" title="Phone" placeholder="phone"></br>
+        <section id="phoneError" class="error"></section>
+
+        <label for="date">Date:</label></br>
+        <input type="date" id="date" name="date" required title="date"></br>
+        <section id="dateError" class="error"></section>
+
+        <label for="number">Number:</label></br>
+        <input type="number" id="number" name="number" required min="1" max="10"  title="Number"></br></br>
+        <section id="numberError" class="error"></section>
+
+        <input id="submit" type="submit" value="Submit"></br>
+
+
+    </form>
+  
+
+  </body>
+</html>
