@@ -9,15 +9,23 @@
   <body>
 
     <style>
-     
+
+      
+
+      
+      
       #form:hover{
         border: 2px solid rgb(0, 76, 255);
         border-radius: 5px;
         box-shadow: 1px 1px 10px rgba(0, 98, 255, 0.84);
         width: 170px;
+        background-image: url("https://media.istockphoto.com/id/959093714/vector/abstract-blurry-pastel-colored-background.jpg?s=612x612&w=0&k=20&c=xpFMU4pP-QzwqGo7YiPFVGtbWRBuxe60rc3axc73iCs=");
 
       }
       #form{
+        
+        
+       
         border: 2px solid rgb(0, 229, 255);
         border-radius: 5px;
         box-shadow: 1px 1px 10px;
@@ -35,9 +43,11 @@
         
       }
     </style> 
+    <section id="sizez">
+      
    
      <form  id="form"onsubmit="return validateForm()"> 
-         <label for="name">Name:</label></br>
+         <label for="name"  >Name: </label></br>
         <input type="text" id="name" name="name" required pattern="[A-Za-z]{9}" title="Name" placeholder="Name"></br>
         <section id="nameError" class="error"></section>
 
@@ -65,7 +75,7 @@
 
 
     </form>
-  
+    </section>
 
   </body>
 </html>
